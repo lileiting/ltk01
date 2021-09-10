@@ -1,6 +1,6 @@
 FROM homebrew/brew:latest
 ENV HOMEBREW_NO_AUTO_UPDATE=1
-RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+RUN ln -snf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && echo Asia/Shanghai >> /etc/timezone
 RUN brew tap brewsci/bio && brew install perl cpanm \
   samtools bcftools datamash pigz htop glances \
   parallel && cpanm local::lib && \
