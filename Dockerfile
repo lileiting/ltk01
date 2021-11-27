@@ -12,5 +12,3 @@ RUN brew tap brewsci/bio && \
   rm -rf /home/linuxbrew/.cache /home/linuxbrew/.cpanm \
          /home/linuxbrew/.bundle /home/linuxbrew/.gem
 ENV LESSOPEN="|/home/linuxbrew/.linuxbrew/bin/lesspipe.sh %s" LESS_ADVANCED_PREPROCESSOR=1
-ARG HOME
-ENV PATH=$PATH:$HOME/apps/bin:$HOME/.local/bin
