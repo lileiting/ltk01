@@ -5,7 +5,7 @@ USER linuxbrew
 ENV HOMEBREW_NO_AUTO_UPDATE=1
 RUN brew tap brewsci/bio && \
   brew install perl cpanm lesspipe \
-  samtools bcftools \
+  samtools bcftools minimap2 bowtie2 hisat2 \
   datamash pigz parallel \
   htop glances && \
   cpanm local::lib && \
