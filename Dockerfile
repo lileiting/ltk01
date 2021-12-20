@@ -6,7 +6,7 @@ ENV HOMEBREW_NO_AUTO_UPDATE=1
 RUN brew tap brewsci/bio && \
   brew install perl cpanm lesspipe r \
   samtools bcftools minimap2 bowtie2 hisat2 muscle \
-  datamash pigz parallel htop glances && \
+  datamash pigz parallel htop glances tmux && \
   cpanm local::lib && \
   rm -rf /home/linuxbrew/.cache /home/linuxbrew/.cpanm \
          /home/linuxbrew/.bundle /home/linuxbrew/.gem
