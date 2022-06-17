@@ -4,7 +4,7 @@ RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && echo Asia/Shangha
 USER linuxbrew
 ENV HOMEBREW_NO_AUTO_UPDATE=1
 RUN brew tap brewsci/bio && \
-  brew install perl cpanm lesspipe r \
+  brew install perl cpanm lesspipe r vim \
   samtools bcftools minimap2 bwa \
   bowtie2 hisat2 muscle bedtools \
   datamash pigz parallel htop glances tmux cmake && \
